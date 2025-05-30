@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="weather_style.css">
+</head>
+<body>
+   <div class="card">
+    <h1>Weather Report</h1>
+    <div class="search">
+         <input id="input-text" type="text" placeholder="Enter the city Name">
+        <button class="btt"><img style="width: 1.3rem;height: 1.3rem;" src="search-interface-symbol.png"></button>
+    </div>
+        <div class="weather">
+            <img src="sun.png" class="sun-icon">
+            <h1 id="degrees">22°c</h1>
+            <h2 id="city">
+               India 
+            </h2>
+             <div class="weather-condition">
+                <div class="col">
+                    <img src="humidity.png" class="hw-icon">
+                    <div>
+                        <p  class="humidity">50%</p>
+                        <p style="font-size: 10px;"> Humidity </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="windy.png" class="hw-icon">
+                    <div>
+                        <p class="wind">
+                            15 km/h
+                        </p>
+                        <p style="font-size: 10px;">
+                            Wind Speed
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+       <script src="weather_js.js"></script>
+   </div>
+</body>
+</html>
