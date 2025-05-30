@@ -11,7 +11,10 @@ async function weatherReport(){
             const response = await fetch(`${apiurl}&q=${input}&appid=${apikey}`);
             
             if (!response.ok) {
+
                 throw new Error("City not found!");
+               
+
             }
 
             const data = await response.json();
@@ -24,6 +27,7 @@ async function weatherReport(){
             // console.log(data);
         } catch (error) {
             alert(error.message);
+             document.getElementById("input-text").value="";
         }
     }
 
