@@ -21,7 +21,7 @@ async function weatherReport(){
             document.querySelector(".humidity").innerText = data.main.humidity + "%";
             document.querySelector(".wind").innerText = data.wind.speed + " km/h";
             document.querySelector(".weather").style.display="block";
-            console.log(data);
+            // console.log(data);
         } catch (error) {
             alert(error.message);
         }
@@ -30,4 +30,11 @@ async function weatherReport(){
 }
 const button = document.querySelector(".btt");
 button.addEventListener('click',weatherReport);
+document.getElementById("input-text").addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+   weatherReport()
+    
+  }
+}
+);
 
